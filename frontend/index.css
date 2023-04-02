@@ -1,0 +1,258 @@
+body{
+    background: rgb(24,28,40);
+    color: white;
+    padding: 0px;
+    font-family: sans-serif;
+}
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(97,180,182);
+    margin-top: 0px;
+    height: 5.4rem;
+}
+.cont1{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.inner{
+    display: flex;
+    align-items: baseline;
+    height: 2.4em;
+}
+.cont2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    padding: 0 !important;
+}
+.centre{
+    color: white;
+    background: rgb(46,50,65);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    padding: .1rem;
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 4rem;
+}
+.centre select{
+    background: rgb(46,50,65);
+    color: white;
+    text-decoration: none;
+    border: 0px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+}
+.centre select option{
+    border: none ;
+    background-color: rgb(46,50,65);
+    color: white;
+    text-decoration: none;
+    border-radius: 0px !important;
+    height: 2rem;
+    width: 100%;
+    border-radius: .3rem;
+}
+.cont3{
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+.container{
+    padding-left: .9rem;
+    padding-right: .9rem;
+    padding-bottom: 50px;
+}
+
+
+.table {
+    border-collapse: separate;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+    font-size: 1.5rem;
+    width: 100%;
+    border-spacing: 0 15px;
+    
+}
+
+td {
+    border: solid 1px rgb(24,28,40);
+    border-style: solid none;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.9rem;
+}
+th{
+    color: rgb(128,130,136);
+    text-align: center;
+}
+
+td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.table thead tr{
+    background-color: rgb(24,28,40);
+    color: #ffffff;
+    text-align: left;
+    
+}
+
+.row{
+    border-radius: 3rem;
+}
+
+.table tbody tr{
+    background-color: rgb(46,50,65);
+    padding-bottom: 2rem;
+}
+
+.text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128,130,136);
+    font-size: 1.8rem;
+    
+}
+
+.circle{
+    border: .2rem rgb(97,180,182) solid;
+    border-radius: 50%;
+    padding: .5rem;
+    
+}
+.cont-btn{
+    border: .3rem rgb(97,180,182) solid;
+    border-radius: .5rem;
+    width: 60%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(97,180,182)
+}
+.cont-btn i{
+   background-color: white;
+   margin-left: 1rem;
+   border: .3rem rgb(97,180,182) solid;
+   border-radius: 50%;
+}
+.btn{
+    background-color: rgb(97,180,182);
+    border: .3rem rgb(97,180,182) solid;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(46,50,65);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(97,180,182);
+  }
+  
+
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+
+@media (max-width: 900px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont1{
+        margin-bottom: 1rem;
+    }
+    .cont2{
+        margin-bottom: 1rem;
+        width: 40%;
+    }
+    .cont3 div{
+        margin-right: 2rem;
+        width: 100%;
+    }
+    .table{
+        position: absolute;
+        top:250px;
+    }
+    .centre{
+        margin-left: 1.3rem;
+    }
+}
